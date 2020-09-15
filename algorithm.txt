@@ -1,0 +1,66 @@
+import the library Random
+Make asterisk design
+Make intro to show what Program assignment this is
+Make another asterisk design
+
+
+Print statement welcoming the user to the Dice Roller
+Create 'choice' variable with an integer input giving the user options for which dice he/she would like to choose from
+
+
+(TROUBLESHOOTING):  Came back to this issue after I coded all the if statements below
+	V	    Had to figure out how to get the program to continue to run after the user was given the random roll
+		    Also had to find out what type of variable to create and what while loop could go along with it
+
+Create a while loop to display the categories for the user as long as choice does NOT equal 0
+Create an input for the user to select a specific category
+Create 'exitToMain' variable set to 'n' before making the second while loop
+
+Create while loop to keep the program running as long as 'exitToMain' is NOT equal to 'y'
+
+
+Create an if statement that runs if 'choice' variable is equal to 1
+	Make 'fourSided' variable equal a random range (imported from the random library) from 1-4
+	Print statement that shows what number the random range decided to generate
+	
+	Create another if statement that tells if 'fourSided' is equal to the lowest number (1)
+		Print statement to execute a phrase telling the user that they rolled the minimum roll number
+	Create elif statement that tells if 'fourSided' is equal to the highest number (4)
+		Print statement to execute a phrase telling the user that they rolled the maximum roll number
+	Create an else statement in case they neither rolled a 1 or 4
+		Print statement to execute an encouraging message telling the user "Good roll!"
+
+
+Copy and paste the main if statement from above with the if, elif, and else statements along with it 4 times
+Went through the first copy and changed the if statement to elif
+Changed it to run if'choice' variable is equal to 2 instead of 1
+Changed the 'fourSided' variable to 'sixSided'
+Changed randrange from (1,4) to (1,6)
+Changed the other variable names that were 'fourSided' to 'sixSided'
+Changed the elif statement from seeing if 'sixSided' is equal to 4 to seeing if it was equal to 6
+
+
+Repeat and make slight changes for the 8-sided dice (choice 3)
+
+Repeat and make slight changed for the 10-sided dice (choice 4)
+
+Repeat and make slight changes for the 20-sided dice (choice 5)
+
+
+Create an if statement that runs if 'choice' variable is equal to 0
+	Executes a print statement that thanks the user for using the dice roller and tells them to play again
+
+
+(TROUBLESHOOTING):  Forgot about the 'exitToMain' variable from before the while loop so I was having trouble with the program rerolling
+	V	    Had to reread through my code and found my mistake
+
+Create 'exitToMain' input (from earlier, before the while loop) to allow the user to decide whether or not he/she wants to exit to the main menu by entering 'Y' or 'y'
+(If 'N' or 'n' the program will reroll the same dice until the user decided to exit to the main menu)
+
+(SORT OF TROUBLESHOOTING):
+Went back and plugged in modules to define specific parts of my program
+Defined mainMenu to print out all the stuff that was needed for my main menu
+Defined main with mainMenu and all the if and elif statements inside of it
+Created a break after the elif choice == 0
+
+Then I ran main to call for the execution of main module
